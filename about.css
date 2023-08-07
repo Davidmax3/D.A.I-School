@@ -1,0 +1,158 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   background-color: rgb(63, 59, 116);
+   color: white;
+   font-family: 'Poppins', sans-serif;
+}
+a {
+   color: white;
+   text-decoration: none;
+}
+header {
+   display: flex;
+   width: 100%;
+   background-color: rgb(110, 103, 226);
+height: 125px;
+     border-bottom: 10px solid rgb(35, 102, 141);
+     align-items: center;
+}
+.logo1 {
+   width: 70px;
+   height: 70px;
+   margin-left: 5px;
+}
+.logo {
+   margin-left: 10px;
+   font-size: 24px;
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+   user-select: none;
+}
+.icons {
+   font-size: 2rem;
+   position: absolute;
+   right: 5%;
+}
+.icons #close-icon {
+   display: none;
+}
+#check {
+   display: none;
+}
+#check:checked~ .icons #menu-icon {
+   display: none;
+}
+#check:checked~ .icons #close-icon {
+   display: block;
+}
+#check:checked~ .navlist {
+   height: 39rem;
+}
+.navlist {
+   display: block;
+   position: absolute;
+   background-color: rgb(110, 103, 226);
+   width: 100%;
+   top: 19.5%;
+   overflow: hidden;
+   height: 0;
+   transition: all ease .55s;
+   z-index: 999;
+}
+.navlist a {
+   display: block;
+   font-size: 30px;
+   text-align: center;
+   margin: 2rem 0 5rem 0;
+}
+
+div h3 {
+   font-size: 25px;
+   padding: 20px 10px;
+}
+div p {
+   font-size: 20px;
+   padding-left: 10px;
+}
+
+
+
+footer {
+   background-color: rgb(110, 103, 226);
+   margin-top: 50px;
+ }
+ .ft1 t {
+   display: block;
+   font-size: 25px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-family: monospace;
+   padding-top: 20px;
+   margin-left: 10px;
+ }
+ .ft1 p {
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-family: monospace;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin-left: 10px;
+ }
+ .ft2 t {
+   display: block;
+   font-size: 25px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-family: monospace;
+   padding-top: 20px;
+   margin-left: 10px;
+ }
+.par {
+   font-size: 21px;
+   font-family: monospace;
+   font-weight: 600;
+   margin: 20px 10px;
+}
+.par img {
+   width: 30px;
+   position: absolute;
+   left: 50%;
+}
+.ft3 t {
+   display: block;
+   font-size: 25px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-family: monospace;
+   padding-top: 20px;
+   margin-left: 10px;
+ }
+ .ft3 p img {
+   width: 40px;
+   margin: 20px 5px;
+ }
+ @media (max-width:365px) {
+   .navlist {
+      top: 17.6%;
+   }
+ }
+ @media (min-width:390px) {
+   .navlist {
+      top: 18.5%;
+   }
+ }
+ @media (min-width:410px) {
+   .navlist {
+      top: 15.2%;
+   }
+ }
+ @media (min-width:413px) {
+   .navlist {
+      top: 17.5%;
+   }
+ }
